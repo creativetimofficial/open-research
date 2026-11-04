@@ -1,0 +1,12 @@
+[
+  { "id": "eu-ai-act-2026", "question": "Which EU AI Act obligations start applying in 2026, and to whom?" },
+  { "id": "mcp-spec", "question": "What is the Model Context Protocol and which transports does its current specification define?" },
+  { "id": "ag-ui", "question": "What is the AG-UI protocol and how does it differ from MCP?" },
+  { "id": "fasting-evidence", "question": "What does recent research say about intermittent fasting and longevity in humans?" },
+  { "id": "solid-state-batteries", "question": "Which companies have announced solid-state EV battery production timelines, and what are they?" },
+  { "id": "node-sqlite", "question": "What is the status of the node:sqlite module in Node.js 24, and what does it support?" },
+  { "id": "jwst-findings", "question": "Summarize two notable James Webb Space Telescope findings from the past year, with sources." },
+  { "id": "rust-in-linux", "question": "How is Rust being adopted in the Linux kernel, and which subsystems use it?" },
+  { "id": "postgres-18", "question": "What are the headline features of PostgreSQL 18?" },
+  { "id": "agent-frameworks", "question": "Compare three open-source agent frameworks released or majorly updated this year." }
+]
