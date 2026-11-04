@@ -1,6 +1,6 @@
 # Open Research: the app (UI, tool layer, lite runtime). Hermes runs as its own
 # container; see docker-compose.yml.
-FROM node:24.22.0-bookworm-slim AS deps
+FROM node:26.13.0-bookworm-slim AS deps
 WORKDIR /repo
 RUN npm install --global pnpm@10.34.7
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
@@ -12,7 +12,7 @@ FROM deps AS build
 COPY . .
 RUN pnpm build
 
-FROM node:24.22.0-bookworm-slim AS run
+FROM node:26.13.0-bookworm-slim AS run
 WORKDIR /app
 ENV NODE_ENV=production PORT=3000 HOSTNAME=0.0.0.0 DATA_DIR=/app/data
 COPY --from=build /repo/.next/standalone ./
